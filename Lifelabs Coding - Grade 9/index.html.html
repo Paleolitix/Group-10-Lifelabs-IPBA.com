@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html>
+<head>
+
+<title>Group 10-Lifelabs IPBA</title>
+<link rel="stylesheet" href="main.css">
+
+</head>
+
+<div class="header">
+  <h1>Train of Thought : Gaming</h1>
+  <p2>9-AM-3 : Group 10</p2> <br>
+  <p6>Critical Thinking</p6>
+  
+<br> <br>
+
+<div class="homepage"><a href="index.html">Home Page</a>  </div>
+
+<div class="page2"> <a href="Page 2.html">Page 2</a>  </div>
+
+<div class="page3"><a href="Page 3.html">Page 3</a> </div>
+
+<div class="credits"><a href="Credits.html">About Us</a> </div>
+
+<button onclick="myFunction()" class="java">🎮</button>
+
+<p id="demo" class="message"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Hello Viewer! What is your name?", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! I hope you're having a good day!";
+  }
+}
+</script>
+
+</div>
+
+<body>
+
+<br>
+
+<h1 class="intro">Introduction</h1>
+
+<hr> <!horizontal Line!>
+
+<br>
+<br>
+
+
+<h3 class="whatisgaming">
+What is Gaming?
+</h3>
+
+<p class="firsttext">
+  &nbsp;&nbsp;&nbsp;&nbsp;Gaming refers to the act of playing electronic games, whether through consoles,computers, 
+mobile phones <br> spacespace or another medium altogether. Although traditionally solitary form of relaxation, online multiplayer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+spacevideo games have made gaming a popular group activity as well.
+</p>
+
+<h3 class="whatisgamingcontent">
+What is Gaming Content?
+</h3>
+
+<p class="firsttext">
+  &nbsp;&nbsp;&nbsp;&nbsp;Gaming Content refers to the audio-visual content of the Game, including the visual 
+appearances of its <br>characters and matching in-game  data that is produced and made available 
+to game content users or viewers <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that any party may gather in connection with a certain game or sequel. 
+Gaming content can also refer<br> to various media like YouTube videos which showcase different games.
+Another famous platform for gaming<br> content is Twitch. Here you may live stream, make videos,
+ and engage with your viewers as well as chat about <br>games. Your viewers will watch you while you 
+ play games such as Valorant, mobile legends league of legends, <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;
+ call of duty, and so on.
+ </p>
+ 
+ 
+ <br>
+ <br>
+
+  <!--Image Carousel-->
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <img src="1.5.jpg" style="width:100%" class="picture1">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="3.5.jpg" style="width:100%" class="picture2">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="2.5.jpg" style="width:100%" class="picture3">
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+  }
+  </script>
+
+ <!--End of Image Carousel-->
+
+</body>
+</html>
+
+
